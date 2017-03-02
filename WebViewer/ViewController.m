@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *fullURL = @"https://jsfiddle.net/zachDwick/fxdv4fas/";
+    NSURL *url = [NSURL URLWithString:fullURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_webView loadRequest:requestObj];
 }
 
 
