@@ -1,0 +1,8 @@
+WebViewer
+
+Simple iOS app which loads a given URL in a UIWebView
+
+This is useful for testing Stripe.js, Checkout, and Elements on mobile devices
+
+Copyright 2017 zach wick <zwick@stripe.com>
+Licensed under the GNU GPLv3 or later
